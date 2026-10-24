@@ -1,0 +1,8 @@
+defaults:
+  - h100_256
+  - _self_
+data_dir: data/processed
+run_dir: saved/reproduce_107m_256
+trainer:
+  max_steps: 77474
+  calibrate_budget: false

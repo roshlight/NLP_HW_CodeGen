@@ -1,0 +1,36 @@
+{
+  "local_parquet": "/tmp/codegen107_256/raw_train",
+  "counts": {
+    "seen": 11838003,
+    "train": 11774212,
+    "train_target_tokens": 905249515,
+    "train_overlength": 51840,
+    "val": 11912,
+    "val_target_tokens": 920668,
+    "val_overlength": 39
+  },
+  "tokenizer_sha256": "74f2ff776db54e0b0b5966fd3eacc98b3dd5a07b463411fba85591f838d55910",
+  "vocab_size": 16384,
+  "model_vocab_size": 16384,
+  "max_source": 256,
+  "max_target": 256,
+  "seed": 42,
+  "val_modulus": 1000,
+  "tokenizer_rows_per_shard": 4096,
+  "length_quantiles": {
+    "source": {
+      "p50": 46.0,
+      "p90": 75.0,
+      "p95": 84.0,
+      "p99": 107.0,
+      "max": 271.0
+    },
+    "target": {
+      "p50": 69.0,
+      "p90": 124.0,
+      "p95": 151.0,
+      "p99": 219.0,
+      "max": 609.0
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "verified_core_sources": [
+    "src/model/transformer.py",
+    "src/trainer/trainer.py",
+    "src/text_encoder/tokenizer.py",
+    "src/configs/model/code107m.yaml",
+    "src/configs/h100_256.yaml",
+    "prepare.py"
+  ],
+  "sha256": {
+    "src/model/transformer.py": "0de145505f74e1a76063c4de25c8895dee8ceebeeec92d443ce26522b1a3da27",
+    "src/trainer/trainer.py": "fe0bd6a7bf030a4c7e563c813195d427c6e01454c5d30f41e8c33cfdb3cc4ba5",
+    "src/text_encoder/tokenizer.py": "c517bc1a84ab7d58b4c14042b3120c1887d038411c46ae690f426a2582792cca",
+    "src/configs/model/code107m.yaml": "d2f6b9de363644673dc67e9862e3ab0fd4ff2290a0ebe9b79e9365027c2576fd",
+    "src/configs/h100_256.yaml": "b2974a4019855fbf1ee52df882d12462ae53507ed50722fae48bec07a2e31beb",
+    "prepare.py": "9b3a4ef2b33bccb368757c94806ef3ed4388a053a949e13b9ab12f53c9f7075e"
+  },
+  "parameters": 106977792,
+  "training_complete": true
+}

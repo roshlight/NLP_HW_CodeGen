@@ -1,0 +1,11 @@
+{
+  "dataset": "SlavaYus/tinysms_qa_12m",
+  "revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+  "file": "data/test/test.parquet",
+  "rows": 1919,
+  "original_dataset_row_order_preserved": true,
+  "source": "official_test_split_linked_from_assignment",
+  "parquet_sha256": "8bde59c8d8bb7edc4e8a503be22fc132c4a47773025d333432e78c5489e6522a",
+  "questions_sha256": "a3a128e5acf694f9b9a828dcc582bacb79367eecf11af2f6041c0c5f788e7003",
+  "separate_bot_file_compared": false
+}

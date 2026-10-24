@@ -1,0 +1,28 @@
+defaults:
+  - first_train
+  - _self_
+device: cpu
+run_dir: saved/smoke
+model:
+  dim: 64
+  heads: 4
+  hidden: 128
+  encoder_layers: 2
+  decoder_layers: 2
+  dropout: 0.0
+hardware:
+  micro_batch: 2
+  accumulation: 2
+  workers: 0
+  precision: fp32
+trainer:
+  max_steps: 3
+  warmup_steps: 1
+  max_hours: 0.1
+  calibrate_budget: false
+  log_every: 1
+  eval_every: 2
+  save_every: 2
+  val_examples: 4
+  generation_examples: 2
+  generation_max_tokens: 16

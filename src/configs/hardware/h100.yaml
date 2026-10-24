@@ -1,0 +1,4 @@
+micro_batch: 64
+accumulation: 4
+workers: 8
+precision: bf16

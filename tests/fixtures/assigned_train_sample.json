@@ -1,0 +1,130 @@
+[
+  {
+    "question": "Mark has 10 crayons. He gives 2 crayons to his younger sister and loses another 4 while he was playing. How many crayons does Mark have left?",
+    "code": "def solve() -> int:\n    crayonsTotal = 10\n    crayonsGiven = 2\n    crayonsLost = 4\n    crayonsLeft = crayonsTotal - crayonsGiven - crayonsLost\n    result = crayonsLeft\n\n    return result\n"
+  },
+  {
+    "question": "A group of tourists went on a hike. They hiked for 5 hours and took a 30 minute break. If they hiked in total for 10 miles, what was their average speed in miles/hour?",
+    "code": "def solve() -> int:\n    total_time = 5.5 #hours\n    total_distance_travelled = 10 #miles\n    average_speed = total_distance_travelled / total_time\n    result = average_speed\n\n    return result\n"
+  },
+  {
+    "question": "A ball is kicked and its height above the ground is given by the equation h(t) = -16t^2 + 32t + 15. What is the maximum height of the ball above the ground?",
+    "code": "def solve() -> int:\n    a = -16\n    b = 32\n    c = 15\n    t_max = -b / (2 * a)\n    h_max = -a * (t_max**2) + b * t_max + c\n    result = h_max\n\n    return result\n"
+  },
+  {
+    "question": "Kim has 4 times the number of crayons than 8 less than the number of markers she has. If she has 60 crayons, how many markers does she have?",
+    "code": "def solve() -> int:\n    number_crayons = 60\n    number_markers = number_crayons // 4 + 8\n    result = number_markers\n\n    return result\n"
+  },
+  {
+    "question": "Student: In preparation for her party, Sarah buys 10 trays of food and 8 cases of beverages. Each tray costs $50 and each case of beverages costs $20. What is the total cost of the trays and beverages?",
+    "code": "def solve() -> int:\n    trays = 10\n    tray_cost = 50\n    cases = 8\n    case_cost = 20\n    tray_total = trays * tray_cost\n    case_total = cases * case_cost\n    total_cost = tray_total + case_total\n    result = total_cost\n\n    return result\n"
+  },
+  {
+    "question": "Student: Allen's father can mow the lawn in 2 hours. Allen's mother can mow the lawn in 4 hours. If they both work together to mow the lawn, how much time will it take?",
+    "code": "def solve() -> int:\n    father_time = 2\n    mother_time = 4\n    total_time = father_time + mother_time\n    result = total_time\n\n    return result\n"
+  },
+  {
+    "question": "Kyle bought a block of chocolate that was divided into 5 equal pieces. He gave each friend a piece of chocolate. How much chocolate did each friend get?",
+    "code": "def solve() -> int:\n    total_chocolate = 5\n    \n    chocolate_per_friend = total_chocolate // 5\n    result = chocolate_per_friend\n\n    return result\n"
+  },
+  {
+    "question": "Julie bought a dress that cost $50, but there was a 25% discount. How much did Julie pay?",
+    "code": "def solve() -> int:\n    original_price = 50\n    discount_percent = 25\n    discount_amount = original_price * (discount_percent/100)\n    final_price = original_price - discount_amount\n    result = final_price\n    return result\n"
+  },
+  {
+    "question": "Michael reads 25 pages of a novel on weekdays and 35 pages on weekends. If it takes him 5 weeks to finish the novel, how many pages does it have?",
+    "code": "def solve() -> int:\n    weekdays_pages = 25\n    weekends_pages = 35\n    weeks = 5\n    \n    total_weekdays_pages = weekdays_pages * 5\n    total_weekends_pages = weekends_pages * 2\n    \n    total_pages = total_weekdays_pages + total_weekends_pages\n    \n    result = total_pages\n    return result\n"
+  },
+  {
+    "question": "Possible answer: There are eight fairies in the Magic Meadow. Each fairy has a wand that can create three rainbows with one wave. The eight fairies are going to fly in a circle around the meadow, a distance of 12 kilometers. If each fairy waves their wand once every 4 meters, how many rainbows appear because of this flight?",
+    "code": "def solve() -> int:\n    waves = 12 * 1000 / 4 #12 kilometers = 12000 meters, divide by 4 meters per wave\n    rainbows = waves * 3 #3 rainbows per wave\n    result = rainbows * 8 #8 fairies\n\n    return result\n"
+  },
+  {
+    "question": "Student: A car travels at a speed of 60 mph for 2 hours, then at 40 mph for the next 4 hours. What would the average speed of the car be for the entire journey?",
+    "code": "def solve() -> int:\n    speed1 = 60 # mph\n    time1 = 2 # hours\n    speed2 = 40 # mph\n    time2 = 4 # hours\n    distance1 = speed1 * time1 # miles\n    distance2 = speed2 * time2 # miles\n    total_distance = distance1 + distance2 # miles\n    total_time = time1 + time2 # hours\n    average_speed = total_distance / total_time # mph\n    result = average_speed\n\n    return result\n"
+  },
+  {
+    "question": "A toy store has 150 stuffed animals. If 40 of them are pandas, 30 of them are lions, 20 of them are giraffes, and 10 of them are unicorns, how many stuffed animals are left in the store?",
+    "code": "def solve() -> int:\n    total_animals = 150\n    pandas = 40\n    lions = 30\n    giraffes = 20\n    unicorns = 10\n    \n    other_animals = total_animals - pandas - lions - giraffes - unicorns\n    \n    animals_left = other_animals\n    \n    result = animals_left\n    \n    return result\n"
+  },
+  {
+    "question": "Nicole needs to earn $900 in 3 weeks for a trip. If she earns $10 per hour at her job, how many hours will she need to work to save the $900?",
+    "code": "def solve() -> int:\n    income_goal = 900\n    wage_per_hour = 10\n    \n    result = income_goal / wage_per_hour\n    \n\n    return result\n"
+  },
+  {
+    "question": "A farmer planted vegetable seeds in three fields. In the first, he planted 25 rows of carrots with 10 carrot seeds each row. In the second, he planted 30 rows of cucumbers with 7 cucumber seeds each row. In the third, he planted 15 rows of peppers with 12 pepper seeds each row. What is the total number of seeds he planted?",
+    "code": "def solve() -> int:\n    carrots = 25 * 10\n    cucumbers = 30 * 7\n    peppers = 15 * 12\n    total = carrots + cucumbers + peppers\n    result = total\n\n    return result\n"
+  },
+  {
+    "question": "Student: A store has 120 neckties. If they sell half of them, how many neckties do they have left?",
+    "code": "def solve() -> int:\n    initial_neckties = 120\n    sold_neckties = initial_neckties / 2\n    remaining_neckties = initial_neckties - sold_neckties\n    result = remaining_neckties\n\n    return result\n"
+  },
+  {
+    "question": "A man takes a loan of $5000 with a 2% annual interest rate. If he repays $2000 after two years, how much does he still owe?",
+    "code": "def solve() -> int:\n    loan_amount = 5000\n    interest_rate = 0.02\n    time_period = 2\n    interest_amount = loan_amount * interest_rate * time_period\n    amount_paid = 2000\n    amount_owed = loan_amount + interest_amount - amount_paid\n    result = amount_owed\n\n    return result\n"
+  },
+  {
+    "question": "Linda and Maria went to the gym to take classes. They both spent $30. Linda took two yoga classes for $12 each and a meditation class for $6. Maria took a pilates class for $15 and a dance class for $10. How much did Maria's dance class cost?",
+    "code": "def solve() -> int:\n    linda_yoga_classes = 2\n    linda_yoga_class_cost = 12\n    linda_meditation_class_cost = 6\n    maria_pilates_class_cost = 15\n    maria_dance_class_cost = 10\n    \n    linda_total_cost = (linda_yoga_classes * linda_yoga_class_cost) + linda_meditation_class_cost\n    maria_total_cost = maria_pilates_class_cost + maria_dance_class_cost\n    \n    maria_dance_class_cost = maria_total_cost - (linda_total_cost - 30)\n    \n    result = maria_dance_class_cost\n    \n    return result\n"
+  },
+  {
+    "question": "At the Red Barn Bakery, they bake 3468 loaves of bread, 2124 muffins, and 1786 cookies. How many more muffins and cookies are baked than loaves of bread?",
+    "code": "def solve() -> int:\n    muffins_and_cookies = 2124 + 1786 # add the number of muffins and cookies\n    bread = 3468 # assign the number of loaves of bread to a variable\n    difference = muffins_and_cookies - bread # subtract the number of loaves of bread from the number of muffins and cookies\n    result = difference # assign the difference to the result variable\n\n    return result\n"
+  },
+  {
+    "question": "Jacob takes 4 meals per day. His breakfast consists of 200 calories, while his lunch is 40% more calories than that. His dinner has 2.5 times more calories than lunch. He also drinks 6 glasses of water, each containing 10 calories. How many calories does he consume in one day?",
+    "code": "def solve() -> int:\n    breakfast_calories = 200\n    lunch_calories = breakfast_calories * 1.4\n    dinner_calories = lunch_calories * 2.5\n    water_calories = 6 * 10\n    total_calories = (breakfast_calories + lunch_calories + dinner_calories + water_calories) * 4\n    result = total_calories\n    return result\n"
+  },
+  {
+    "question": "If Chloe can knit a scarf in 2 hours and a hat in 3 hours, how long will it take her to knit 5 scarves and 4 hats?",
+    "code": "def solve() -> int:\n    scarf_time = 2\n    hat_time = 3\n    num_scarves = 5\n    num_hats = 4\n    \n    total_time = (scarf_time * num_scarves) + (hat_time * num_hats)\n    \n    result = total_time\n    \n    return result\n"
+  },
+  {
+    "question": "Every morning, Sarah jogs around a circular track that is 0.4 miles long, while her sister, Liz, runs at three times her speed. During their workout, how many times does Liz circle the track?",
+    "code": "def solve() -> int:\n    track_length = 0.4  # miles\n    \n    sarah_speed = 1  # unit: times the track length per hour\n    \n    liz_speed = 3 * sarah_speed  # unit: times the track length per hour\n    \n    liz_circles = liz_speed / sarah_speed\n    \n    result = liz_circles\n    \n    return result\n"
+  },
+  {
+    "question": "Student: A 500-sheet pack of printer paper costs $8. A 1000-sheet pack costs $15. What's the minimum number of sheets of paper you will need to use each month so that the 1000-sheet pack is strictly cheaper per sheet of paper?",
+    "code": "def solve() -> int:\n    pack_500 = 500\n    cost_500 = 8\n    pack_1000 = 1000\n    cost_1000 = 15\n    cost_per_sheet_500 = cost_500 / pack_500\n    cost_per_sheet_1000 = cost_1000 / pack_1000\n    min_sheets = int((cost_500 - cost_1000) / (cost_per_sheet_1000 - cost_per_sheet_500))\n    result = min_sheets\n\n    return result\n"
+  },
+  {
+    "question": "A yardstick is 36 inches long. How many centimeters long is it?",
+    "code": "def solve() -> int:\n    inches_in_yardstick = 36\n    cm_in_inch = 2.54\n    yardsick_in_cm = inches_in_yardstick * cm_in_inch\n    result = yardsick_in_cm\n    return result\n"
+  },
+  {
+    "question": "A delivery man wants to divide his route equally between the two assistants, Bob and Jane. Driving to a location takes Bob 8 minutes, carrying heavy loads takes Jane 12 minutes. If Bob drives to 15 locations, and Jane carries 10 heavy loads, how many loads should Bob carry to divide the workload?",
+    "code": "def solve() -> int:\n    bob_drive_time = 8\n    jane_carry_time = 12\n    bob_locations = 15\n    jane_loads = 10\n    \n    total_bob_time = bob_drive_time * bob_locations\n    total_jane_time = jane_carry_time * jane_loads\n    \n    bob_loads = total_bob_time / jane_carry_time\n    \n    result = bob_loads\n    return result\n"
+  },
+  {
+    "question": "In four years, Emma will be 21 years old. Emma's grandmother is currently six times as old as Emma is today. In one year, Emma's mother will be the same age as Emma's grandmother is today. Currently, how many years old is Emma's mother?",
+    "code": "def solve() -> int:\n    emma_age_in_4_years = 21\n    emma_age_today = emma_age_in_4_years - 4\n    grandmother_age_today = 6 * emma_age_today\n    mother_age_in_1_year = grandmother_age_today - 1\n    mother_age_today = mother_age_in_1_year - 1\n    \n    result = mother_age_today\n    \n    return result\n"
+  },
+  {
+    "question": "Benjamin picked some oranges at the fruit stand that cost $0.75 each. When Benjamin reached the cash register, he realized he was $9 short of the total price, so his friend Mason funded the rest. If Benjamin had $18 on him, how many oranges did he buy?",
+    "code": "def solve() -> int:\n    cost_per_orange = 0.75\n    amount_short = 9\n    benjamin_money = 18\n    \n    total_cost = benjamin_money + amount_short\n    number_of_oranges = total_cost / cost_per_orange\n    \n    result = number_of_oranges\n    return result\n"
+  },
+  {
+    "question": "A square garden has an area of 64 square feet. What is the length of one of its sides?",
+    "code": "def solve() -> int:\n    area = 64\n    side_length = area ** 0.5\n    result = side_length\n\n    return result\n"
+  },
+  {
+    "question": "A store has 500 pens and pencils combined. If the number of pens is twice the number of pencils, how many pens are there?",
+    "code": "def solve() -> int:\n    total = 500\n    pens = (2/3) * total\n    result = pens\n    return result\n"
+  },
+  {
+    "question": "Rachel and her friends are going to a concert. The tickets cost $25 each. She is buying 5 tickets. Her friend will pay her back for 2 tickets. How much money does Rachel need to bring with her to the concert?",
+    "code": "def solve() -> int:\n    ticket_cost = 25\n    number_of_tickets = 5\n    total_cost = ticket_cost * number_of_tickets\n    amount_due = total_cost - (ticket_cost * 2)\n    \n    result = amount_due\n\n    return result\n"
+  },
+  {
+    "question": "Sophia is baking cupcakes for a fundraiser. Each batch makes twice as many cupcakes as a regular recipe. She needs to make 24 cupcakes, how many batches does she need to make?",
+    "code": "def solve() -> int:\n    regular_recipe = 12\n    desired_cupcakes = 24\n    batch_size = regular_recipe * 2\n    batches_needed = desired_cupcakes // batch_size\n    \n    result = batches_needed\n    \n    return result\n"
+  },
+  {
+    "question": "A wildlife team is monitoring the number of fish in a pond. There are 6 turtles, 11 frogs, and 14 salamanders in the pond. How many animals are in the pond in total?",
+    "code": "def solve() -> int:\n    number_turtle = 6\n    number_frog = 11\n    number_salamander = 14\n    \n    result = number_turtle + number_frog + number_salamander\n\n    return result\n"
+  },
+  {
+    "question": "Janine went to the movies and paid $9 for each ticket. She bought 4 tickets and paid with a $50 bill. How much change did she get?",
+    "code": "def solve() -> int:\n    ticket_cost = 9\n    num_tickets = 4\n    bill = 50\n    \n    total_cost = ticket_cost * num_tickets\n    change = bill - total_cost\n    result = change\n\n    return result\n"
+  }
+]

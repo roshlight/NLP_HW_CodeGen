@@ -1,0 +1,11 @@
+{
+  "parameters": 106977792,
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "micro_batch": 64,
+  "accumulation": 4,
+  "source_length": 256,
+  "target_length": 256,
+  "max_length_micro_step_seconds": 0.1210748553276062,
+  "peak_memory_gb": 12.886956032,
+  "note": "Synthetic allocation check only; weights discarded, not an experiment."
+}

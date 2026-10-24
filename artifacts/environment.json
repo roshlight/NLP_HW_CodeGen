@@ -1,0 +1,6 @@
+{
+  "torch": "2.9.1+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "parameters": 106977792
+}

@@ -1,0 +1,311 @@
+{
+  "repository": "https://github.com/Kera-0/-",
+  "commit": "94a7bb8ea94f33c0de64efdab8796ee409a300ed",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "git_blob_sha1": "d9d263f32224a72eebc4ecdee91a7047338dd7fb"
+    },
+    {
+      "path": ".gitignore",
+      "git_blob_sha1": "969b55ffe795ce048dc49b4a0390f964d07c5511"
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha1": "e7b228e2275061b1ad6b163f8fbefc4b6586e513"
+    },
+    {
+      "path": "artifacts/checkpoint_verification.json",
+      "git_blob_sha1": "b1c7f307d36aad2aca8c7796077a3100159c8238"
+    },
+    {
+      "path": "artifacts/config.yaml",
+      "git_blob_sha1": "300ad4dd059b9cbe3978e51e3f6830bf612f848a"
+    },
+    {
+      "path": "artifacts/data_metadata.json",
+      "git_blob_sha1": "f6b35939cd05be3d7409f2b895960014cda63fe8"
+    },
+    {
+      "path": "artifacts/environment.json",
+      "git_blob_sha1": "439c6a86e778b6cc1d3d6fbe9781638f0cdf7146"
+    },
+    {
+      "path": "artifacts/export_status.json",
+      "git_blob_sha1": "f577c1da583020baad0c59c79ce53287d9551d12"
+    },
+    {
+      "path": "artifacts/metrics.jsonl",
+      "git_blob_sha1": "4510e2e92d9ddf2dcbb64051fdf114dc15874826"
+    },
+    {
+      "path": "artifacts/preflight.json",
+      "git_blob_sha1": "85002eee51132fa2aab87c69e9cf44515feff351"
+    },
+    {
+      "path": "artifacts/pytest_result.txt",
+      "git_blob_sha1": "709d87ce29534368d88c1204ae88a686dac3eca8"
+    },
+    {
+      "path": "artifacts/question_source.json",
+      "git_blob_sha1": "3516553bfd7a2de8c53aa79b3a788c7c3c032522"
+    },
+    {
+      "path": "artifacts/raw_data_manifest.json",
+      "git_blob_sha1": "2330a28c04408eb98d63354318e84630816e682e"
+    },
+    {
+      "path": "artifacts/source_manifest.json",
+      "git_blob_sha1": "993bbb0c522e6a6338b1a43e54bc0eb38340d6e3"
+    },
+    {
+      "path": "artifacts/source_provenance.json",
+      "git_blob_sha1": "f96440f302a58a3b8816d99159c0b3d9fa3f5837"
+    },
+    {
+      "path": "artifacts/submission.details.jsonl",
+      "git_blob_sha1": "7dab21cab2db9cf83e5d523901877f6c1e8625a7"
+    },
+    {
+      "path": "artifacts/submission.timing.json",
+      "git_blob_sha1": "57740a51980ce96f25d0f6a03601798bbea6d0fb"
+    },
+    {
+      "path": "artifacts/submission_validation.json",
+      "git_blob_sha1": "06dbadf4d797cbf2a991003991a3ecc4f13ab1f7"
+    },
+    {
+      "path": "artifacts/training_summary.json",
+      "git_blob_sha1": "c4db88d61f80f3c7f3c95ae04d9060b53f500729"
+    },
+    {
+      "path": "delivery/manifest.json",
+      "git_blob_sha1": "515b9905de249486678b325a116f239661796570"
+    },
+    {
+      "path": "inference.py",
+      "git_blob_sha1": "cc712e7cb8c1061bb2407523fe8b3ed765f2ed5d"
+    },
+    {
+      "path": "notebooks/inference_t4.ipynb",
+      "git_blob_sha1": "4b82891a1bf1544251571f3efef39d533844d991"
+    },
+    {
+      "path": "operations/export_watch.py",
+      "git_blob_sha1": "1a7ed791d93033fa42d5304a023615aa02c04037"
+    },
+    {
+      "path": "pass1_questions.jsonl",
+      "git_blob_sha1": "7fd5ac15e9018fc977e7e0846107ac8b9925bfd3"
+    },
+    {
+      "path": "preflight.py",
+      "git_blob_sha1": "10910688424a48cf240439a7e175d1a46f5f2ec5"
+    },
+    {
+      "path": "prepare.py",
+      "git_blob_sha1": "80806f95544f0df3aee62b23f5d0f8e6157acf03"
+    },
+    {
+      "path": "pyproject.toml",
+      "git_blob_sha1": "72d9c69bdbd73ef17a515a5a697e8b71c671709e"
+    },
+    {
+      "path": "report/experiments.md",
+      "git_blob_sha1": "80d91cf0d8f99f291a1d2734fbc539e100c164c7"
+    },
+    {
+      "path": "report/report.pdf",
+      "git_blob_sha1": "d4a42d50e378700bb6f7f3e1fa9b7a3ea42d003f"
+    },
+    {
+      "path": "report/training_curve.pdf",
+      "git_blob_sha1": "a0126cbddb25137a495974fabb083bbf9f1fd106"
+    },
+    {
+      "path": "report/training_curve.png",
+      "git_blob_sha1": "4685eb17fcf723a0e79e4875470d0f6463f2ddcb"
+    },
+    {
+      "path": "requirements-report.txt",
+      "git_blob_sha1": "ca98a83b62ddccf8e81a874ae93d895991470678"
+    },
+    {
+      "path": "requirements.txt",
+      "git_blob_sha1": "300a01ced163b5249fb203c3af2ac475da3f21e0"
+    },
+    {
+      "path": "scripts/assemble_checkpoint.py",
+      "git_blob_sha1": "4e9c8913da26d78038871c8d3dd018a94f31c3eb"
+    },
+    {
+      "path": "scripts/build_inference_notebook.py",
+      "git_blob_sha1": "05e10b1c811fbe6cf3f54d06890b18d230ac390c"
+    },
+    {
+      "path": "scripts/build_report.py",
+      "git_blob_sha1": "151d1775e22203c4b15242840ff91165c0f6f442"
+    },
+    {
+      "path": "scripts/finalize_delivery.py",
+      "git_blob_sha1": "8289d93f2667a8a3939cdd56c0d8bebbee76ad3e"
+    },
+    {
+      "path": "scripts/package_submission.py",
+      "git_blob_sha1": "52a2fe9f6cb874a3e04f355ab9b2b3f32ea5739f"
+    },
+    {
+      "path": "scripts/prepare_questions.py",
+      "git_blob_sha1": "fcd032fd1e49b073da7ff2a0e707f9ba1bdb0b55"
+    },
+    {
+      "path": "scripts/validate_submission.py",
+      "git_blob_sha1": "f471738946e0749064f62076ac90874c9625d0ae"
+    },
+    {
+      "path": "src/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/configs/first_train.yaml",
+      "git_blob_sha1": "fe03a82f6885ae3e789501d0a526b9cd192b44d3"
+    },
+    {
+      "path": "src/configs/h100_256.yaml",
+      "git_blob_sha1": "5458d3c057a116230fe167711504aa45224456c4"
+    },
+    {
+      "path": "src/configs/hardware/a100.yaml",
+      "git_blob_sha1": "65be0aa7119e57d916b7d55031dd7ee49bb2cd6a"
+    },
+    {
+      "path": "src/configs/hardware/h100.yaml",
+      "git_blob_sha1": "b2baf41ec4709d435f0e1d7ad655b29d5e2c31f6"
+    },
+    {
+      "path": "src/configs/model/code107m.yaml",
+      "git_blob_sha1": "fecc1d87efb6d9e32c26f4ffad62317a6fa2b023"
+    },
+    {
+      "path": "src/configs/reproduce.yaml",
+      "git_blob_sha1": "4fb9447214e3b544212743916434160cc906634d"
+    },
+    {
+      "path": "src/configs/smoke.yaml",
+      "git_blob_sha1": "c7d7badaa1df1339b14a9c699971db3a9b58ba9d"
+    },
+    {
+      "path": "src/datasets/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/datasets/collate.py",
+      "git_blob_sha1": "c0c2bc618ad0571647cd98d3e649ed3928248bbb"
+    },
+    {
+      "path": "src/datasets/token_dataset.py",
+      "git_blob_sha1": "a540c90a70ebbf44fce4f52eceb949bea13ea983"
+    },
+    {
+      "path": "src/logger/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/logger/local.py",
+      "git_blob_sha1": "15f17241348665d2f9d027281cb300f8e5acfbef"
+    },
+    {
+      "path": "src/loss/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/loss/token_loss.py",
+      "git_blob_sha1": "68798d7d7d5b65fc0a02869a9f54bce1aa15e9d0"
+    },
+    {
+      "path": "src/metrics/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/metrics/arithmetic.py",
+      "git_blob_sha1": "1d315c1703366b8a83bb641e1ddc9eba9c221e57"
+    },
+    {
+      "path": "src/metrics/code.py",
+      "git_blob_sha1": "302a40d6ee3a02611e0b225b5212da063f665671"
+    },
+    {
+      "path": "src/model/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/model/transformer.py",
+      "git_blob_sha1": "e1f84599c2fcb83606f6eb7e44a74a8038e33edd"
+    },
+    {
+      "path": "src/text_encoder/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/text_encoder/tokenizer.py",
+      "git_blob_sha1": "599892bb102ec2468f959fb9b100a22ac2bbcbab"
+    },
+    {
+      "path": "src/trainer/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/trainer/trainer.py",
+      "git_blob_sha1": "d05f81e6767d81569e88b097cadadc924ce9e332"
+    },
+    {
+      "path": "src/utils/__init__.py",
+      "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "src/utils/checkpoint.py",
+      "git_blob_sha1": "d420f6f890e7920d5818cc9a4525073755485f80"
+    },
+    {
+      "path": "src/utils/provenance.py",
+      "git_blob_sha1": "dd894064c09bbe9d9517948905d177c9fe28210f"
+    },
+    {
+      "path": "submission.jsonl",
+      "git_blob_sha1": "ee0585f6dc6757d20f1948cb5e82862861dc06f5"
+    },
+    {
+      "path": "tests/conftest.py",
+      "git_blob_sha1": "8cc1efbad471c6cf4ba8ee34a4e2fe9970dda891"
+    },
+    {
+      "path": "tests/fixtures/assigned_train_sample.json",
+      "git_blob_sha1": "efda7d82e544366b0a1b6a22d06eee73dabed62a"
+    },
+    {
+      "path": "tests/test_arithmetic.py",
+      "git_blob_sha1": "559a5c04efefaee7c8de6f2f1acbd5d091d3470f"
+    },
+    {
+      "path": "tests/test_data.py",
+      "git_blob_sha1": "b5fea36b776b1f5d14ca599eae2a037a2e5128e3"
+    },
+    {
+      "path": "tests/test_model.py",
+      "git_blob_sha1": "7b594a2d7b171413d828e004498f30cef749459e"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "git_blob_sha1": "2bc216b3af5236cb483676cdfedbb69da3b2651a"
+    },
+    {
+      "path": "tests/test_submission_validation.py",
+      "git_blob_sha1": "6e6732c5ecf1181cf72f476597aacc2557157e1e"
+    },
+    {
+      "path": "train.py",
+      "git_blob_sha1": "01158e71aa881cded3964ac0aece43f24e5abb27"
+    }
+  ],
+  "omitted": "delivery/hw2_submission.zip.000 through .007 (399158194 bytes); download instructions in README"
+}

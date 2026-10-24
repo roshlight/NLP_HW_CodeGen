@@ -1,0 +1,8 @@
+{
+  "step": 77000,
+  "parameters": 106977792,
+  "max_length": 256,
+  "qk_norm": true,
+  "all_weights_finite": true,
+  "tokenizer_sha256": "74f2ff776db54e0b0b5966fd3eacc98b3dd5a07b463411fba85591f838d55910"
+}

@@ -1,0 +1,47 @@
+{
+  "archive": "hw2_submission.zip",
+  "size": 399158194,
+  "sha256": "766bada8f6f0d370b9013d0a3d364ab77a2d9ae33d3c87b2a28f4e3d54e4bac8",
+  "parts": [
+    {
+      "name": "hw2_submission.zip.000",
+      "size": 50331648,
+      "sha256": "3b25976e1d72ea60910b4877e9aaa574118bf280363a0388fa0966ff02ee7ea3"
+    },
+    {
+      "name": "hw2_submission.zip.001",
+      "size": 50331648,
+      "sha256": "34743c0068034cb8734513e6f9ddb2b6eaf9fbc0daf7a9413d6a798ca6dd7615"
+    },
+    {
+      "name": "hw2_submission.zip.002",
+      "size": 50331648,
+      "sha256": "0e1f8f60add5e562d163e3c0f27406511dd661cfbdd2ef9d18471acfc49b8218"
+    },
+    {
+      "name": "hw2_submission.zip.003",
+      "size": 50331648,
+      "sha256": "f5626b6c70f405ba8710844383391ec2a737ccaa4c2be429d8b0e456d08f9c68"
+    },
+    {
+      "name": "hw2_submission.zip.004",
+      "size": 50331648,
+      "sha256": "b56e3d1afbc7b6627acaf269f598aaeb56b2bb2f7103500a1f1bc4c6fcf32f9b"
+    },
+    {
+      "name": "hw2_submission.zip.005",
+      "size": 50331648,
+      "sha256": "d85b43a77cc70a360354bce07691d1b5063d9ecbddabd2229a1ff9ff4dbd782b"
+    },
+    {
+      "name": "hw2_submission.zip.006",
+      "size": 50331648,
+      "sha256": "df047b86acf6484e77c3d20af747c9aaad01bda4415fc3d6a41caeedb5bb3431"
+    },
+    {
+      "name": "hw2_submission.zip.007",
+      "size": 46836658,
+      "sha256": "8f77ccdaff58fe76b04ca7416d034e4a8cac9a812e64e5e36416db04e4654a0c"
+    }
+  ]
+}

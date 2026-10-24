@@ -1,0 +1,14 @@
+defaults:
+  - first_train
+  - _self_
+data_dir: /tmp/codegen107_256/processed
+run_dir: /tmp/codegen107_256/saved/h100_256
+optimizer:
+  lr: 0.0001
+trainer:
+  max_steps: 90000
+  max_hours: 5.0
+  generation_examples: 128
+  generation_max_tokens: 256
+  log_every: 20
+  tensorboard: false

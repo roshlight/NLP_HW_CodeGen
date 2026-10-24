@@ -1,0 +1,13 @@
+{
+  "completed": true,
+  "parameters": 106977792,
+  "steps": 77474,
+  "training_hours": 3.5355393013068372,
+  "max_hours_configured": 5,
+  "max_steps_configured": 90000,
+  "planned_steps": 77474,
+  "dataset": "SlavaYus/tinysms_qa_12m",
+  "revision": "b2724689ff079e9c22efd548fe134bfb29036dbb",
+  "official_pass_at_1": null,
+  "t4_measured": false
+}

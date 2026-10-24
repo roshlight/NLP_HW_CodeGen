@@ -1,0 +1,16 @@
+{
+  "questions": 1919,
+  "parameters": 106977792,
+  "generation_pipeline_seconds": 2.962391637265682,
+  "load_seconds": 1.5862321928143501,
+  "total_seconds": 4.5525269247591496,
+  "eos_rate": 0.5362167795726941,
+  "dtype": "fp16",
+  "device": "NVIDIA H100 80GB HBM3",
+  "actual_t4": false,
+  "batch_size": 128,
+  "max_new_tokens": 64,
+  "under_180_seconds": true,
+  "submission_sha256": "a934d60d8c07c2a1c4e9b413a6e3c2ab1501fe5baa653295875bf9ec3cb83d4e",
+  "questions_sha256": "a3a128e5acf694f9b9a828dcc582bacb79367eecf11af2f6041c0c5f788e7003"
+}
