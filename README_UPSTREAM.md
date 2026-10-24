@@ -5,7 +5,16 @@ Encoder–decoder Transformer: **106 977 792 параметра**, контек�
 (revision `b2724689ff079e9c22efd548fe134bfb29036dbb`). Предобученные веса,
 данные и токенизаторы прошлых экспериментов не используются.
 
-Обучение завершено: **77,474 шагов**, 3.54 ч на H100. Готовый файл для бота: [submission.jsonl](submission.jsonl). Отчёт: [report/report.pdf](report/report.pdf). Генерация 1919 программ на H100 заняла 4.55 с с учётом загрузки; фактический замер на T4 пока отсутствует.
+Обучение завершено: **77 474 шага**, 3.54 ч на H100. **Текущий файл для бота:
+[submission_256.jsonl](submission_256.jsonl)** — лимит генерации увеличен с 64 до
+256 токенов на том же чекпойнте. Генерация всех 1919 программ заняла **8.85 с
+на H100**, включая загрузку модели. Фактический замер на T4 пока отсутствует.
+
+Первая посылка [submission.jsonl](submission.jsonl), лимит 64, получила
+**47.71% public pass@1 (458/960)** по сообщению бота. Результат нового файла
+пока неизвестен. В полном выводе синтаксических ошибок **1 вместо 194**,
+программ без `return` среди разобранных — **5 вместо 596**.
+Это проверки структуры кода, не оценка математической правильности.
 
 ## Генерация для бота
 
@@ -16,32 +25,39 @@ Encoder–decoder Transformer: **106 977 792 параметра**, контек�
 Отдельный файл от Telegram-бота для сравнения не получен; используется порядок
 официального теста задания. Веса находятся в полном архиве в `delivery/`; контрольные суммы включены.
 
-Полный архив хранится частями до 48 MiB в `delivery/` из-за ограничения
-GitHub на размер одного файла. Сборка и проверка:
+Исходный полный архив с весами хранится частями до 48 MiB в `delivery/`.
+Он сохраняет первую версию с лимитом 64. Обновлённые исходники, ноутбук,
+отчёт и файл ответов находятся в [delivery/update_256.zip](delivery/update_256.zip);
+обновление использует те же веса. Для новой версии распакуйте базовый архив
+в отдельную папку, чтобы сохранить актуальные файлы репозитория:
 
 ```bash
-python scripts/assemble_checkpoint.py --extract
+python scripts/assemble_checkpoint.py --output /tmp/hw2_submission.zip
+python -m zipfile -e /tmp/hw2_submission.zip weights_bundle
 ```
 
 ```bash
 pip install -r requirements.txt
 python scripts/prepare_questions.py
-python inference.py --checkpoint model/best.pt --tokenizer model/tokenizer.json \
-  --questions pass1_questions.jsonl --output submission.jsonl \
-  --max-new-tokens 64 --batch-size 128 --dtype fp16
+python inference.py --checkpoint weights_bundle/model/best.pt --tokenizer weights_bundle/model/tokenizer.json \
+  --questions pass1_questions.jsonl --output submission_256.jsonl \
+  --max-new-tokens 256 --batch-size 128 --dtype fp16
 python scripts/validate_submission.py --questions pass1_questions.jsonl \
-  --submission submission.jsonl --details submission.details.jsonl
+  --submission submission_256.jsonl --details submission_256.details.jsonl
 ```
 
-Отправлять боту нужно только `submission.jsonl`: 1919 объектов вида
+Отправлять боту нужно только **`submission_256.jsonl`**: 1919 объектов вида
 `{"code": "..."}`, по одному на строку, в исходном порядке вопросов.
-Используется жадная генерация одной программы на задачу, максимум 64 новых токена.
+Используется жадная генерация одной программы на задачу, максимум 256 новых токенов.
 Предсказания сохраняются без исправления кода или подстановки ответов.
 
-Ноутбук [notebooks/inference_t4.ipynb](notebooks/inference_t4.ipynb) предназначен
+Ноутбук [notebooks/inference_t4_256.ipynb](notebooks/inference_t4_256.ipynb) предназначен
 для Kaggle/Colab с T4. Он проверяет реальную модель GPU и измеряет время загрузки
 модели, токенизации, генерации и записи файла. **Замер на T4 пока не выполнен**;
 скорость на H100 не подтверждает ограничение 180 секунд.
+Исходный [ноутбук с лимитом 64](notebooks/inference_t4.ipynb) оставлен для
+воспроизведения первой посылки. Сравнение версий:
+[artifacts/revision_256/comparison.json](artifacts/revision_256/comparison.json).
 
 ## Обучение
 

@@ -1,0 +1,26 @@
+{
+  "rows": 1919,
+  "changed_outputs": 848,
+  "max64": {
+    "syntax_valid": 1725,
+    "syntax_invalid": 194,
+    "no_return_in_solve_among_parseable": 596,
+    "bounded_arithmetic_evaluator_returns_number": 1090,
+    "eos_count": 1029
+  },
+  "max256": {
+    "syntax_valid": 1918,
+    "syntax_invalid": 1,
+    "no_return_in_solve_among_parseable": 5,
+    "bounded_arithmetic_evaluator_returns_number": 1868,
+    "eos_count": 1913
+  },
+  "baseline_public_pass_at_1": {
+    "correct": 458,
+    "total": 960,
+    "percent": 47.71
+  },
+  "candidate_public_pass_at_1": null,
+  "same_checkpoint_step": 77000,
+  "same_parameters": 106977792
+}

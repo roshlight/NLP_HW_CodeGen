@@ -42,23 +42,29 @@ for part in 000 001 002 003 004 005 006 007; do
     "https://raw.githubusercontent.com/Kera-0/-/94a7bb8ea94f33c0de64efdab8796ee409a300ed/delivery/hw2_submission.zip.$part" \
     -o "delivery/hw2_submission.zip.$part"
 done
-python scripts/assemble_checkpoint.py --extract
+python scripts/assemble_checkpoint.py --output /tmp/hw2_submission.zip
+python -m zipfile -e /tmp/hw2_submission.zip weights_bundle
 ```
 
-Скрипт проверяет контрольные суммы. После распаковки доступны
-`model/best.pt` и `model/tokenizer.json`.
+Скрипт проверяет контрольные суммы. Архив распаковывается отдельно, чтобы не перезаписать обновлённые исходники.
+После распаковки доступны `weights_bundle/model/best.pt` и
+`weights_bundle/model/tokenizer.json`.
 
 ## Инференс
 
 ```bash
-python inference.py --checkpoint model/best.pt --tokenizer model/tokenizer.json \
+python inference.py --checkpoint weights_bundle/model/best.pt --tokenizer weights_bundle/model/tokenizer.json \
   --questions pass1_questions.jsonl --output predictions.jsonl \
-  --max-new-tokens 64 --batch-size 128 --dtype fp16
+  --max-new-tokens 256 --batch-size 128 --dtype fp16
 ```
 
 Сохраняется исходный порядок вопросов. Параметры генерации соответствуют
 исходному репозиторию. Для запуска в Kaggle/Colab предусмотрен
-`notebooks/inference_t4.ipynb`.
+`notebooks/inference_t4_256.ipynb`.
+
+Новая генерация сохранена в `submission_256.jsonl`; исходная версия
+`submission.jsonl` оставлена для сравнения. Используются те же веса модели.
+Сравнение версий — `artifacts/revision_256/comparison.json`.
 
 ## Проверки
 
@@ -69,6 +75,6 @@ python -m pytest -q
 ## Происхождение
 
 [Исходный репозиторий](https://github.com/Kera-0/-), commit
-`94a7bb8ea94f33c0de64efdab8796ee409a300ed`.
+`1436a4b717dd6b5cfc85c18532dd87edd8aab7f9`.
 Код и остальные скачанные файлы сохранены без изменений. Сокращён только README;
 оригинал сохранён в `README_UPSTREAM.md`, контрольные суммы — в `DOWNLOAD_MANIFEST.json`.

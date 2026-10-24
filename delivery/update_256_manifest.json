@@ -1,0 +1,10 @@
+{
+  "archive": "update_256.zip",
+  "bytes": 711977,
+  "sha256": "e1b3add987967b48ddc48e9119eb1f187d499ee5b1cf6add79de8438b5ef879c",
+  "base_archive_sha256": "766bada8f6f0d370b9013d0a3d364ab77a2d9ae33d3c87b2a28f4e3d54e4bac8",
+  "same_checkpoint_step": 77000,
+  "max_new_tokens": 256,
+  "submission": "submission_256.jsonl",
+  "submission_sha256": "f6b2ea8d47c058afc77513c8b5e36608e54ecf9782bbb906affb04c860af953f"
+}

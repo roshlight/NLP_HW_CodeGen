@@ -1,0 +1,13 @@
+{
+  "source": "user_reported_telegram_bot_result",
+  "submission": "submission.jsonl",
+  "max_new_tokens": 64,
+  "public_tasks": 960,
+  "correct": 458,
+  "pass_at_1_percent": 47.71,
+  "no_code_percent": 0.0,
+  "syntax_error_percent": 9.38,
+  "runtime_error_percent": 19.06,
+  "wrong_number_percent": 23.85,
+  "submission_sha256": "a934d60d8c07c2a1c4e9b413a6e3c2ab1501fe5baa653295875bf9ec3cb83d4e"
+}
